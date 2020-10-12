@@ -8,4 +8,4 @@ const ProductSchema = new Schema({
     productGroupId: String
 });
 
-export default mongoose.model('Product', ProductSchema)
+export default mongoose.model('Product', ProductSchema);
