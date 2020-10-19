@@ -1,11 +1,11 @@
-import graphql, { GraphQLFloat } from 'graphql';
+import graphql from 'graphql';
 import User from '../models/User.js';
 import UserType from './UserType.js';
 import Sale from '../models/Sale.js';
 import SaleType from './SaleType.js';
 import Product from '../models/Product.js';
 
-const {GraphQLID, GraphQLString, GraphQLList, GraphQLObjectType} = graphql;
+const {GraphQLID, GraphQLString, GraphQLList, GraphQLFloat, GraphQLObjectType} = graphql;
 
 const OrderType = new GraphQLObjectType({
     name: 'Order',
