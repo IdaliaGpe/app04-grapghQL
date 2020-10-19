@@ -2,7 +2,6 @@ import graphql from 'graphql';
 import ProductType from './ProductType.js';
 import Product from '../models/Product.js';
 import Order from '../models/Order.js';
-import Order from './OrderType.js';
 import OrderType from './OrderType.js';
 
 const {GraphQLID, GraphQLString, GraphQLObjectType} = graphql;

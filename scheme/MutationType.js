@@ -1,4 +1,4 @@
-import graphql, { GraphQLList } from 'graphql';
+import graphql from 'graphql';
 import Product from '../models/Product.js';
 import ProductGroup from '../models/ProductGroup.js';
 
@@ -111,17 +111,17 @@ const MutationType = new GraphQLObjectType({
                 return address.save();
             }
         },
-        //Orders
+        //orders
         addOrder: {
             type: OrderType,
-            args: {userId: {GraphQLID}},
+            args:{userId: {type: GraphQLID}},
             resolve(parent, args){
                 const order = new Order(args);
                 return order.save();
             }
         },
-        //Sales
-        addSales: {
+        //sales
+        addSale: {
             type: SaleType,
             args: {
                 productId: {type: GraphQLID},
